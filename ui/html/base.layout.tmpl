@@ -1,0 +1,19 @@
+{{define "base"}}
+<!doctype html>
+<html lang='ru'>
+    <head>
+        <meta charset='utf-8'>
+        <title> Тестовое задание</title>
+    </head>
+    <body>
+        <header>
+        </header>
+        <a href='/'>Главная</a>
+        <a href='/refresh'>Обновление токенов</a>
+        <main>
+        {{template "main" .}}
+        </main>
+        {{template "footer" .}}
+    </body>
+</html>
+{{end}}

@@ -1,0 +1,13 @@
+{{template "base" .}}
+{{define "main"}}
+
+<h1> {{.ErrorMessage }}</h1>
+<h3>
+Токены успешно обновлены: <br>
+</h3>
+<h5>
+Новый Acces токен {{.Info.Acces }} <br><br>
+Новый Refresh токен {{.Info.Refresh }} <br><br>
+Новый В хэш вид refresh токена в БД {{.Info.Hash }}
+</h5>
+{{end}}

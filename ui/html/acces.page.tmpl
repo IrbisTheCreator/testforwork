@@ -1,0 +1,11 @@
+{{template "base" .}}
+{{define "main"}}
+<h3>
+Успешно создана пара токенов и acces токен сохранен в Cookie: <br>
+</h3>
+<h5>
+Acces токен {{.Info.Acces }} <br><br>
+Refresh токен {{.Info.Refresh }} <br><br>
+В хэш вид refresh токена в БД {{.Info.Hash }}
+</h5>
+{{end}}

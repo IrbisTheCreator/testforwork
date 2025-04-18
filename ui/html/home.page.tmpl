@@ -1,0 +1,10 @@
+{{template "base" .}}
+{{define "main"}}
+<h3>Главная страница</h3>
+<h1>Введите GUID для которого мы получаем токены</h1>
+    <form action="/take" method="GET">
+        <label for="guid">GUID:</label>
+        <input type="number" id="guid" name="GUID" required min="1">
+        <button type="submit">Получить</button>
+    </form>
+{{end}}
